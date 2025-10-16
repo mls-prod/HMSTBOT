@@ -17,7 +17,7 @@ const Ref = () => {
 
   const copyToClipboard = () => {
     // eslint-disable-next-line
-    const reflink = `https://t.me/maxitapbot?start=r${id}\n\MAX tokens mining is live! Two is better than one!  Join my squad, and let\'s double the fun (and earnings 🤑)! MAX Power Tap! 🚀`;
+    const reflink = `https://t.me/hmstmlsbot?start=r${id}\n\MAX tokens mining is live! Two is better than one!  Join my squad, and let\'s double the fun (and earnings 🤑)! MAX Power Tap! 🚀`;
 
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard
@@ -60,7 +60,7 @@ const Ref = () => {
     const shareData = {
       title: "Mine MAX tokens now!",
       // eslint-disable-next-line
-      url: `https://t.me/maxitapbot?start=r${id}\n\ `, // Replace with your link
+      url: `https://t.me/hmstmlsbot?start=r${id}\n\ `, // Replace with your link
       text: "MAX tokens mining is live! Two is better than one!  Join my squad, and let's double the fun (and earnings 🤑)! MAXITAP Power Tap! 🚀",
     };
 
