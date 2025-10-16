@@ -163,7 +163,7 @@ const Wallet = () => {
         <div className="w-full pt-1 justify-center flex-col space-y-3 px-5">
           <div className="w-full text-center flex flex-col items-center justify-center space-y-3">
             <div className="w-full text-left flex justify-between items-center">
-              <h1 className="font-semibold text-[17px] text-center">My Assets</h1>
+              <h1 className="font-semibold text-[17px] text-center">Мой кошелек</h1>
               <div className="w-[60%]">
                 <Address />
               </div>
@@ -173,7 +173,7 @@ const Wallet = () => {
               <div className="w-full flex justify-between items-center">
 
               <span className="flex items-center text-[13px] space-x-3 text-[#a4a4a4]">
-                <h2 className="text-[#a4a4a4]">Total Assets</h2>
+                <h2 className="text-[#a4a4a4]">Баланс</h2>
                 {showBalance ? (
                   <PiEyeBold size={16} className="mt-[2px]" onClick={toggleBalance} />
                 ) : (
@@ -183,7 +183,7 @@ const Wallet = () => {
 
                   <NavLink to='/history' className="flex items-center space-x-[2px] text-[12px] mt-2 text-[#a4a4a4]">
                     <LuFileClock size={14} className=""/>
-                    <span className="">History</span>
+                    <span className="">История</span>
                   </NavLink>
 
               </div>
@@ -203,17 +203,17 @@ const Wallet = () => {
             <div className="flex space-x-4 pt-[2px] justify-between items-center w-full">
               <button onClick={() => setOpenInfo(true)} className="w-[32%] bg-cards px-4 py-[10px] text-primary text-[12px] space-y-1 rounded-[8px] flex flex-col items-center justify-center">
                 <img src="/withdraw.svg" alt="withdraw" className="w-[24px] h-[24px]" />
-                <span className="">Withdraw</span>
+                <span className="">Вывод</span>
               </button>
 
               <button onClick={() => setOpenSwapModal(true)} className="w-[32%] bg-cards px-4 py-[10px] text-primary text-[12px] space-y-1 rounded-[8px] flex flex-col items-center justify-center">
                 <img src="/convert.webp" alt="convert" className="w-[20px] h-[20px]" />
-                <span className="">Swap</span>
+                <span className="">Обмен</span>
               </button>
 
               <NavLink to='/qualify' className="w-[32%] bg-cards px-4 py-[10px] text-primary text-[12px] space-y-1 rounded-[8px] flex flex-col items-center justify-center">
                 <img src="/gift.svg" alt="tarnsfer" className="w-[24px] h-[24px]" />
-                <span className="">Airdrop</span>
+                <span className="">AirDrop</span>
               </NavLink>
             </div>
             <div className="w-full pt-5 text-left flex justify-start">
@@ -278,17 +278,17 @@ const Wallet = () => {
         </span>
             </div>
             <h3 className="font-medium text-center text-[18px] text-[#ffffff] pt-2 pb-2 uppercase">
-         WITHDRAWAL ACCESS LOCKED!
+         ДОСТУП К ВЫВОДУ СРЕДСТВ ЗАБЛОКИРОВАН!
             </h3>
             <p className="pb-6 text-[14px] w-full text-center">
-          You need to purchase atleast 2 Special Cards in mine activity to unlock withdrawal access! </p>
+          Вам нужно приобрести не менее 2 специальных карт в шахтной активности, чтобы разблокировать доступ к выводу средств! </p>
           </div>
           <div className="w-full flex justify-center pb-6 pt-4">
 
           <NavLink to='/mine'
               className={`bg-btn4 text-[#000] w-full py-[12px] px-6 flex items-center justify-center text-center rounded-[12px] font-medium text-[16px]`}
             >
-             Purchase Special Cards
+             Приобрести специальные карты
             </NavLink>
           </div>
           </div>
@@ -302,10 +302,10 @@ const Wallet = () => {
         </span>
             </div>
             <h3 className="font-medium text-center text-[18px] text-[#ffffff] pt-2 pb-2 uppercase">
-         LAUNCING SOON.. ANTICIPATE!
+         СКОРО.. ОЖИДАЙТЕ!
             </h3>
             <p className="pb-6 text-[14px] w-full text-center">
-         Congratulations you have withdrawal access granted! Keep performing tasks and accumulate more tokens. Withdrawal will be unlocked after listing and token launch.
+         Поздравляем, вы получили доступ к выводу средств! Продолжайте выполнять задачи и накапливайте больше токенов. Вывод средств будет разблокирован после листинга и запуска токена.
            </p>
           </div>
           <div className="w-full flex justify-center pb-6 pt-4">
@@ -314,7 +314,7 @@ const Wallet = () => {
           onClick={() => setOpenInfo(false)}
               className={`bg-btn4 text-[#000] w-full py-[12px] px-6 flex items-center justify-center text-center rounded-[12px] font-medium text-[16px]`}
             >
-             Okay, Continue
+             Хорошо
             </button>
           </div>
           </div>
