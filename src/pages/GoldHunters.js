@@ -703,7 +703,7 @@ useEffect(() => {
             <div className='w-[1px] h-[18px] mx-[10px] bg-divider2'/>
             <div className='flex flex-1 flex-col space-y-1 items-center justify-center'>
               <p className='text-[9px]'>
-                Profit per hour
+                Прибыль в час
               </p>
               <div className='flex items-center justify-center space-x-1 text-[11px]'>
 
@@ -755,7 +755,7 @@ useEffect(() => {
             <PiHandTap size={18} className='tesxt-[#bcbcbc] text-btn4'/>
           </span>
                         <span className='text-nowrap'>
-                        {energy} taps left</span>
+                        {energy} тапов</span>
                         </>
                       )}   
         </div>
@@ -764,7 +764,7 @@ useEffect(() => {
             <img src='/boost.webp' alt='dfd' className='text-btn4 w-[20px]' />
           </span>
           <span className='text-nowrap'>
-            Boosters
+            Улучшения
             </span> 
             <span className='flex items-center'>
               <PiArrowRightBold size={16} className='text-secondary'/>
@@ -774,7 +774,7 @@ useEffect(() => {
       <h1 className='flex w-full justify-center items-center space-x-1 pb-2'>
         <img src='/loader.webp'className='w-[30px]' alt='engagecoin'/>
          <span className='text-[#fff] text-[32px] font-bold'>
-           <span className='pl-[2px]'>{formatNumber(balance + refBonus)} <span className='text-btn4'>MAX</span></span>
+           <span className='pl-[2px]'>{formatNumber(balance + refBonus)} <span className='text-btn4'>MLS</span></span>
         </span>
       </h1>
       <div>
@@ -810,13 +810,13 @@ useEffect(() => {
               </SlideUpText>
             ))}
             <span id="tapmore" className='bg-[#333333b0] hidden tapmore p-[6px] rounded-[6px] absolute top-0 right-0'>
-              tap morre!
+              больше тапов!
             </span>
             <span id="tapmore2" className='bg-[#333333b0] hidden tapmore p-[6px] rounded-[6px] absolute top-0 left-0'>
-              wo hoo! let's go!
+              давай давай!
             </span>
             <span id="tapmore3" className='bg-[#333333b0] hidden tapmore p-[6px] rounded-[6px] absolute top-[-10px] left-[30%]'>
-              tap! tap! tap!!
+              тап! тап! тап!
             </span>
           </Container>
         )}
@@ -836,13 +836,13 @@ useEffect(() => {
               </SlideUpText>
             ))}
             <span id="tapmore" className='bg-[#333333b0] hidden tapmore p-[6px] rounded-[6px] absolute top-0 right-0'>
-              tap morre!
+              больше тапов!
             </span>
             <span id="tapmore2" className='bg-[#333333b0] hidden tapmore p-[6px] rounded-[6px] absolute top-0 left-0'>
-              wo hoo! let's go!
+              давай давай!
             </span>
             <span id="tapmore3" className='bg-[#333333b0] hidden tapmore p-[6px] rounded-[6px] absolute top-[-10px] left-[30%]'>
-              tap! tap! tap!!
+              тап! тап! тап!
             </span>
           </Container>
         )}
@@ -857,26 +857,26 @@ useEffect(() => {
       {energy === 0 && points === 0 ? (
              <>
              <p className='text-[#dedede] py-2 text-[14px] moreTaps font-medium pr-3'>
-              Need more taps? Get boosters now!
+              Нужно больше тапов? Получите бустеры сейчас!
              </p>
             <Link 
               to="/boost"
               className='bg-btn4 getBoosters text-[#000] py-[14px] px-5 text-nowrap rounded-[12px] font-bold text-[15px]'
             >
-              Get Boosters
+              Получить Бустеры
             </Link>
            </>
           ) : (
             <>
           <span className='text-[#fff] font-semibold text-[24px]'>
-            <span className='pl-[2px]'>{points} <span className='text-btn4'>MAX</span></span>
+            <span className='pl-[2px]'>{points} <span className='text-btn4'>MLS</span></span>
           </span>
           <button 
             onClick={handleClaim} 
             disabled={points === 0} 
             className={`${points === 0 || openClaim ? 'text-[#ffffff71] bg-btn2' : 'bg-btn4 text-[#000]'} py-[14px] px-8 rounded-[12px] font-bold text-[16px]`}
           >
-            Claim
+            Получить
           </button>
           </>
           )}
@@ -908,13 +908,13 @@ useEffect(() => {
           <div className="w-full flex justify-center flex-col items-center space-y-3">
             <div className="w-full items-center justify-center flex flex-col space-y-2">
               <IoCheckmarkCircleSharp size={32} className='text-accent'/>
-              <p className='font-medium'>Let's go!!</p>
+              <p className='font-medium'>Поехали!!</p>
             </div>
             <h3 className="font-medium text-[24px] text-[#ffffff] pt-2 pb-2">
-              <span className='text-accent'>+{points}</span> MAX
+              <span className='text-accent'>+{points}</span> MLS
             </h3>
             <p className="pb-6 text-[#bfbfbf] text-[15px] w-full text-center">
-              Keep grinding! something huge is coming! Get more MAX ow! 
+              Продолжай тапать! Приближается что-то огромное! Получите больше MLS!
             </p>
 
             <div className="w-full flex justify-center">
@@ -922,7 +922,7 @@ useEffect(() => {
               onClick={closeClaimer}
               className="bg-btn4 w-fit py-[10px] px-6 flex items-center justify-center text-center rounded-[12px] font-medium text-[16px]"
             >
-              Tap Morrre!
+              Больше тапов!
             </button>
           </div>
           </div>
@@ -966,7 +966,7 @@ useEffect(() => {
             </div>
 
             <p className="pb-6 text-[#bfbfbf] font-semibold px-8 text-[17px] w-full text-center">
-          The exchange has started working for you
+          Биржа начала работать на вас
             </p>
             </div>
             <div className="w-full flex justify-center pb-7">
@@ -974,7 +974,7 @@ useEffect(() => {
               onClick={claimExchange}
               className="bg-btn4 w-full py-[18px] px-6 text-nowrap flex items-center justify-center text-center rounded-[12px] font-semibold text-[17px]"
             >
-              Thank you, {selectedExchange.name} <FaHeart size={17} className='mt-[2px] pl-1'/>
+              Спасибо, {selectedExchange.name} <FaHeart size={17} className='mt-[2px] pl-1'/>
             </button>
           </div>
           </div>
@@ -998,11 +998,11 @@ useEffect(() => {
               <div className="w-full flex flex-col text-center space-y-5 justify-center items-center py-8 relative">
 
 <h1 className='font-semibold text-[18px]'> 
-          Welcome to the <br/> land of Gold & Riches!
+          Добро пожаловать в <br/> страну золота и богатства!
 </h1>
 
 <p className='text-[13px] px-6'>
-  Explore and earn your way up to riches and wealth!
+  Исследуйте и зарабатывайте свой путь к богатству и богатству!
 </p>
    
 
@@ -1012,7 +1012,7 @@ useEffect(() => {
   <>
 
 <h1 className='font-medium text-[14px] text-accent'>
-  Choose Character
+  Выберите пол
 </h1>
 
 
@@ -1043,7 +1043,7 @@ useEffect(() => {
         <>
 
 <h1 className='font-medium text-[14px] text-accent'>
-  Set your name to continue
+  Напишите свое имя, чтобы продолжить
 </h1>
 
 <div className="w-full flex flex-col items-center space-y-3 px-6">
@@ -1062,7 +1062,7 @@ useEffect(() => {
               className="px-6 w-full py-3 text-[15px] bg-accent text-[#000] font-semibold rounded-lg"
               onClick={handleSaveFullName}
             >
-            Contine to GoldCity
+            Начать!
             </button>
             </div>
           </div>
