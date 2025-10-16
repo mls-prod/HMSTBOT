@@ -17,7 +17,7 @@ const Referrals = () => {
 
   const copyToClipboard = () => {
     // eslint-disable-next-line
-    const reflink = `https://t.me/maxitapbot?start=r${id}\n\MAX tokens mining is live! Two is better than one!  Join my squad, and let\'s double the fun (and earnings 🤑)! MAX Power Tap! 🚀`;
+    const reflink = `https://t.me/hmstmlsbot?start=r${id}\n\Майнинг токенов MLS в прямом эфире! Два лучше, чем один! Присоединяйтесь к моему отряду, и давайте удвоим веселье (и заработок 🤑)! MLS ! 🚀`;
 
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard
@@ -60,8 +60,8 @@ const Referrals = () => {
     const shareData = {
       title: "Mine MAX tokens now!",
       // eslint-disable-next-line
-      url: `https://t.me/maxitapbot?start=r${id}\n\ `, // Replace with your link
-      text: "MAX tokens mining is live! Two is better than one!  Join my squad, and let's double the fun (and earnings 🤑)! MAXITAP Power Tap! 🚀",
+      url: `https://t.me/hmstmlsbot?start=r${id}\n\ `, // Replace with your link
+      text: "Майнинг токенов MLS в прямом эфире! Два лучше, чем один! Присоединяйтесь к моему отряду, и давайте удвоим веселье (и заработок 🤑)! MLS ! 🚀",
     };
 
     if (navigator.share) {
@@ -79,7 +79,7 @@ const Referrals = () => {
   const fallbackShare = (shareData) => {
     const encodedText = encodeURIComponent(
       // eslint-disable-next-line
-      `${shareData.url} \n\MAX tokens mining is live! Two is better than one!  Join my squad, and let\'s double the fun (and earnings 🤑)! MAXITAP Power Tap! 🚀`
+      `${shareData.url} \n\Майнинг токенов MLS в прямом эфире! Два лучше, чем один! Присоединяйтесь к моему отряду, и давайте удвоим веселье (и заработок 🤑)! MLS ! 🚀`
     );
     const encodedUrl = encodeURIComponent(shareData.url);
 
@@ -184,7 +184,7 @@ const Referrals = () => {
                 <span className="flex items-center mt-[-1px]">
                   <MdOutlineFileUpload size={18} className="" />
                 </span>
-                <span className="">Share invite link</span>
+                <span className="">Поделиться ссылкой</span>
               </button>
               <button
                 onClick={copyToClipboard}
@@ -194,7 +194,7 @@ const Referrals = () => {
                   <FaLink size={18} className="" />
                 </span>
                 <span className="">
-                  {copied ? <span>Copied!</span> : <span>Copy</span>}
+                  {copied ? <span>Скопировано!</span> : <span>Copy</span>}
                 </span>
               </button>
             </div>
@@ -207,18 +207,18 @@ const Referrals = () => {
                   {loading ? ( // Display loading indicator if data is fetching
                     <>
                       <span className="animate-pulse text-[18px]">
-                        checking..
+                        Проверка..
                       </span>
                     </>
                   ) : (
                     <>
                       <span className="text-[22px]">{referrals.length}</span>{" "}
-                      <span className=""> FRENS</span>
+                      <span className=""> ДРУЗЬЯ</span>
                     </>
                   )}
                 </h2>
                 <p className="text-[10px] small-text3 text-[#ffffff9e] max-w-[10em]">
-                  More frens, better rewards
+                  Больше друзей, лучшие награды
                 </p>
               </div>
               <div className="w-[48.5%] flex flex-col text-[#000] font-medium text-[14px] bg-cards h-[85px] rounded-[10px] px-4 py-2 justify-start text-left relative">
@@ -228,21 +228,21 @@ const Referrals = () => {
                 </h2>
                 <div className="w-full flex items-start justify-between">
                   <p className="text-[10px] text-[#ffffff9e] small-text3 max-w-[10em]">
-                    10% of your frens earnings
+                    10% от вашего заработка
                   </p>
                 </div>
               </div>
             </div>
             <div className="w-full flex justify-between items-center">
               <h3 className="font-semibold small-text text-[17px] text-[#ffffffe0] pl-1">
-                Frens list
+                Список друзей
               </h3>
 
               <NavLink
                 to="/rewards"
                 className="bg-cards3 small-text2 font-medium py-2 px-3 text-[#e7e7e7d6] flex items-center space-x-2 text-[14px] text rounded-[6px]"
               >
-               <span>Claim rewards</span> <RxArrowRight size={14} className="text-btn4 mt-[2px]"/>
+               <span>Получить награды</span> <RxArrowRight size={14} className="text-btn4 mt-[2px]"/>
               </NavLink>
             </div>
             <div
@@ -252,12 +252,12 @@ const Referrals = () => {
               <div className="w-full flex flex-col space-y-3">
                 {loading ? (
                   <p className="text-[#d0d0d0] w-full text-center">
-                    checking...
+                    Проверка...
                   </p>
                 ) : referrals.length === 0 ? (
                   <p className="text-[#d0d0d0] text-center w-full now pt-8 px-5 text-[14px] leading-[24px]">
-                    You have no frens 👨‍👦‍👦 Refer your frens and family, get 10% of
-                    their earnings & unlock more rewards!
+                    У вас нет друзей 👨‍👦‍👦 Пригласите своих друзей, получите 10% от
+                    их заработок и разблокируйте больше наград!
                   </p>
                 ) : (
                   <>
