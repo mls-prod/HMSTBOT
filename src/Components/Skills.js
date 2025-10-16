@@ -239,7 +239,7 @@ const Skills = () => {
                     </button>
                     <div className='w-full h-[1px] bg-[#4141417b]' />
                     <div className='flex items-center justify-center px-3 text-[14px] font-semibold py-[6px]'>
-                      <span className='text-secondary text-nowrap'>lvl {currentLevel}</span>
+                      <span className='text-secondary text-nowrap'>LVL {currentLevel}</span>
                       <div className='w-[1px] h-[14px] mx-[10px] bg-[#4141417b]' />
                       {nextLevelData ? (
                         <span className='flex items-center space-x-2'>
@@ -308,7 +308,7 @@ const Skills = () => {
 
             <div className="flex flex-col">
               <span className='text-[13px]'>
-                  Profit per hour
+                  Прибыль в час
               </span>
             <div className="flex flex-1 items-center justify-center space-x-1">
 
@@ -346,13 +346,13 @@ const Skills = () => {
             >
  {((selectedUpgrade.index === 5 && userLevels[4] < 2) || (selectedUpgrade.index=== 2 && userLevels[3] < 1)) ? (
                       <>
-               Unlock required level first
+               Сначала разблокируйте необходимый уровень
                  
                       </>
                     ) : (
                       <>
                   
-                  Go ahead
+                  Продолжай
                       </>
                     )}
             </button>
@@ -363,13 +363,13 @@ const Skills = () => {
            >
                     {((selectedUpgrade.index === 5 && userLevels[4] < 2) || (selectedUpgrade.index=== 2 && userLevels[3] < 1))  ? (
                       <>
-                Unlock required level first
+                Сначала разблокируйте необходимый уровень
                
                       </>
                     ) : (
                       <>
                   
-                  Insufficient balance
+                  Недостаточный баланс
                       </>
                     )}
            </button>
