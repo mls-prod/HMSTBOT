@@ -182,7 +182,7 @@ const TasksList = () => {
 <NavLink to='/checkin' className='font-medium text-[15px] text-[#C7B292] flex items-center justify-center space-x-1 relative'>
 <span className="w-[10px] h-[10px] animate-pulse bg-green-500 rounded-full flex items-center" />
       <span className=''>
-        Daily Checkin
+        Ежедневная награда
         </span>  
         <span className='flex items-center'>  <RiArrowRightSLine size={18} className=''/> </span>
         </NavLink>
@@ -210,13 +210,13 @@ const TasksList = () => {
 
 <div onClick={() => handleMenu(1)} className={`${activeIndex === 1 ? 'bg-cards text-[#ebebeb]' : ''}  rounded-[6px] text-primary py-[10px] px-3 w-[33%] flex space-x-1 justify-center text-center text-[14px] font-semibold items-center`}>
   <PiNotebook size={16} className="" />
-  <span>Tasks</span>
+  <span>Задания</span>
 </div>
 
 <div onClick={() => handleMenu(2)} className={`${activeIndex === 2 ? 'bg-cards text-[#ebebeb]' : ''}  rounded-[6px] text-primary py-[10px] px-3 w-[33%] space-x-1 font-semibold text-[14px] flex justify-center text-center items-center`}>
   <PiYoutubeLogo size={16} className="" /> 
   <span className='relative'>
- Videos
+ Видео
    <span className='absolute h-[8px] w-[8px] bg-red-500 animate-pulse rounded-full -right-3 top-0'>
 
    </span>
@@ -227,7 +227,7 @@ const TasksList = () => {
 <div onClick={() => handleMenu(3)} className={`${activeIndex === 3 ? 'bg-cards text-[#ebebeb]' : ''}  rounded-[6px] text-primary py-[10px] px-3 w-[33%] space-x-1 font-semibold text-[14px] flex justify-center text-center items-center`}>
   <PiUsersThree size={16} className=" mt-[-2px]" /> 
    <span>
-   Referrals
+   Друзья
   </span>
 
 </div>
@@ -245,10 +245,10 @@ const TasksList = () => {
 
           <div className={`px-1`}>
             <h1 className='text-[18px] font-semibold -mt-2'>
-            Social Tasks
+            Социальные задани
             </h1>
             <p className='text-[14px] text-[#c6c6c6] leading-[24px] pr-8'>
-             Perform social tasks to earn more Maxtap tokens and stay updated!
+             Выполняйте социальные задачи, чтобы заработать больше токенов MLS и быть в курсе событий!
             </p>
           </div>
 
@@ -283,14 +283,14 @@ const TasksList = () => {
                       className={`w-fit py-[6px] px-4 font-medium bg-[#595959cc] hover:bg-[#8a8a8a] text-[#fff] hover:text-[#000] ease-in duration-200 rounded-[6px] ${task.verified && countdownFinished[task.id] ? 'hidden' : ''}`}
                       disabled={task.verified && countdownFinished[task.id]}
                     >
-                      Perform
+                      Выполнить
                     </button>
                     <button
                       onClick={() => startCountdown(task.id)}
                       className={`w-fit py-[6px] px-4 font-medium rounded-[6px] ${countdowns[task.id] ? 'hidden' : showVerifyButtons[task.id] ? `bg-btn4` : 'bg-btn2 text-[#888]'}`}
                       disabled={!showVerifyButtons[task.id] || (task.verified && countdownFinished[task.id])}
                     >
-                      Verify
+                      Проверить
                     </button>
                   </>
                 )}
@@ -299,7 +299,7 @@ const TasksList = () => {
 
 {countdowns[task.id] ? (
                   <span className="w-fit py-[6px] px-4 font-medium bg-btn2 rounded-[6px]">
-                    checking.. {countdowns[task.id]}s
+                    Проверка.. {countdowns[task.id]}s
                   </span>
                 ) : (
                   <>
@@ -360,10 +360,10 @@ const TasksList = () => {
 <div className={`${activeIndex === 2 ? 'block' : 'hidden'} w-full flex items-end justify-center flex-col space-y-4`}>
 <div className={`px-1`}>
             <h1 className='text-[18px] font-semibold -mt-2'>
-           Watch & earn
+           Смотри и зарабатывай
             </h1>
             <p className='text-[14px] text-[#c6c6c6] leading-[24px] pr-8'>
-              Watch video ads and earn high token rewards daily!
+              Смотрите видеорекламу и ежедневно получайте высокие вознаграждения!
             </p>
           </div>
 <YouTubeTasks />
@@ -373,10 +373,10 @@ const TasksList = () => {
 <div className={`${activeIndex === 3 ? 'block' : 'hidden'} w-full flex items-end justify-center flex-col space-y-4`}>
 <div className={`px-1`}>
             <h1 className='text-[18px] font-semibold -mt-2'>
-            Invite friends, get rewards!
+            Приглашайте друзей, получайте награды!
             </h1>
             <p className='text-[14px] leading-[24px] pr-8'>
-            The more frens you refer, the more you earn and get rewarded!
+            Чем больше друзей, тем больше вы зарабатываете и получаете вознаграждение!
             </p>
           </div>
 
@@ -407,13 +407,13 @@ const TasksList = () => {
           <div className="w-full flex justify-center flex-col items-center space-y-3">
             <div className="w-full items-center justify-center flex flex-col space-y-2">
               <IoCheckmarkCircleSharp size={32} className={`text-accent`}/>
-              <p className='font-medium'>Let's go!!</p>
+              <p className='font-medium'>Поехали!!</p>
             </div>
             <h3 className="font-medium text-[20px] text-[#ffffff] pt-2 pb-2">
-              <span className={`text-accent`}>+{formatNumberCliam(claimedBonus)}</span> MAX CLAIMED
+              <span className={`text-accent`}>+{formatNumberCliam(claimedBonus)}</span> MLS ЗАБРАТЬ 
             </h3>
             <p className="pb-6 text-[#9a96a6] text-[15px] w-full text-center">
-              Keep performing new tasks! something huge is coming! Perform more and earn more MAX now! 
+              Продолжайте выполнять новые задачи! Приближается что-то огромное! Выполняйте больше и зарабатывайте больше MLS сейчас!
             </p>
           </div>
 
@@ -422,7 +422,7 @@ const TasksList = () => {
               onClick={closeModal}
               className={`bg-btn4 w-fit py-[10px] px-6 flex items-center justify-center text-center rounded-[12px] font-medium text-[16px]`}
             >
-             Continue tasks
+             Продолжить
             </button>
           </div>
         </div>
