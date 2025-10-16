@@ -135,7 +135,7 @@ const Mine = () => {
          <div className='w-[1px] h-[18px] mx-[10px] bg-divider2'/>
          <div className='flex flex-1 flex-col space-y-1 items-center justify-center'>
            <p className='text-[9px]'>
-           Profit per hour
+           Прибыль в час
            </p>
            <div className='flex items-center justify-center space-x-1 text-[11px]'>
 
@@ -187,18 +187,18 @@ const Mine = () => {
 
           <div className={`${activeIndexMenu === 0 ? 'flex' : 'hidden'} py-[14px] w-full flex-wrap space-y-3 rounded-tl-[40px] rounded-tr-[40px] justify-between`}>
 
-<Skills/>
+<Навыки/>
           </div>
 
           <div className={`${activeIndexMenu === 1 ? 'flex' : 'hidden'} py-[14px] w-full flex-wrap space-y-3 rounded-tl-[40px] rounded-tr-[40px] justify-between`}>
 
-<Business/>
+<Бизнес/>
           </div>
 
 
           <div className={`${activeIndexMenu === 2 ? 'flex' : 'hidden'} py-[14px] w-full flex-wrap space-y-3 rounded-tl-[40px] rounded-tr-[40px] justify-between`}>
 
-<Specials/>
+<Специальные/>
           </div>
 
 
