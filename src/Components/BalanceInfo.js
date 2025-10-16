@@ -55,19 +55,19 @@ const BalanceInfo = ({info, setInfo}) => {
             <div className='w-full items-center flex pt-1 justify-center space-x-[6px]'>
       
             <h3 className="font-bold text-[22px] text-[#ffffff] pt-2 pb-3 mt-[4px]">
-              <span className='text-primary'>Boost your profit</span>
+              <span className='text-primary'>Увеличьте свою прибыль</span>
             </h3>
             </div>
 
             <p className="pb-6 text-[#bfbfbf] px-4 text-[14px] w-full text-center">
-        Perform daily activities to increase your total balance and qualify for airdrop distribution and other benefits
+        Выполняйте ежедневные действия, чтобы увеличить свой общий баланс и получить право на распределение airdrop и другие призы
             </p>
             </div>
             <div className="w-full flex justify-center pb-7">
             <button onClick={() => setInfo(false)}
               className="bg-[#1857ca] text-primary w-full py-[18px] px-6 text-nowrap flex items-center justify-center text-center rounded-[12px] font-semibold text-[17px]"
             >
-              Start earning <img src='/coin.webp' alt='fd' className='mt-[2px] w-[20px] pl-1'/>
+              Начать зарабатывать <img src='/coin.webp' alt='fd' className='mt-[2px] w-[20px] pl-1'/>
             </button>
           </div>
           </div>
