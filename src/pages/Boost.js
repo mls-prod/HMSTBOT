@@ -451,10 +451,10 @@ const Boost = () => {
 
 <div className="pb-1 px-4">
         <h1 className='text-[24px] font-semibold pb-1'>
-              Buy Boosters
+             Купить бустеры
             </h1>
             <p className='text-[14px] leading-[24px] pr-6'>
-            Purchase boosters & earn more tokens!
+            Покупайте бустеры и зарабатывайте больше!
             </p>
             </div>
 
@@ -472,9 +472,9 @@ const Boost = () => {
             <div className="flex space-x-2">
             <GiMagicPalm size={45} className="text-accent2 boostImg"/>
             <span className="font-medium boostTitle text-[15px] items-start text-left flex flex-col space-y-[2px]">
-             <span className=""> Multitap</span>
+             <span className=""> Тап</span>
              <p className="text-[11px] text-[#d0d0d0] text-left">
-              Level {tapValue.level}
+              Уровень {tapValue.level}
              </p>
             </span>
 
@@ -482,7 +482,7 @@ const Boost = () => {
             <span className="text-cardtext boostAmount font-semibold text-[24px] pl-1 flex items-center justify-between w-full">
             <span>{tapValue.level >= tapValues.length ? (
               <>
-              MAX
+              MLS
               </>
             ) : (
               <>
@@ -500,9 +500,9 @@ const Boost = () => {
             <div className="flex space-x-2">
             <MdBatteryCharging90 size={45} className="text-accent2 boostImg"/>
             <span className="font-medium boostTitle text-[15px] items-start text-left flex flex-col space-y-[2px]">
-             <span> Tap Limit</span>
+             <span> Тап лимит</span>
              <p className="text-[11px] text-[#d0d0d0] text-left">
-              Level {battery.level}
+              Уровень {battery.level}
              </p>
             </span>
 
@@ -512,7 +512,7 @@ const Boost = () => {
 
             {battery.level >= energyValues.length ? (
               <>
-              MAX
+              MLS
               </>
             ) : (
               <>
@@ -546,10 +546,10 @@ const Boost = () => {
 
     
             <div className="font-medium boostTitle text-[15px] flex-1 items-start text-left flex flex-col space-y-[2px]">
-             <span> Tapping Guru</span>
+             <span> Мощный Тап</span>
              <span className="text-[11px] text-[#d0d0d0] text-left flex items-center space-x-1">
             <span>
-              Boost points
+              Увеличьте MLS
               </span> 
               <span className="not-italic text-[11px] text-[#d5d5d5] flex items-center">
             <span>x5</span>
@@ -559,7 +559,7 @@ const Boost = () => {
              <span className="text-btn4 boostAmount font-medium flex items-center justify-between w-full">
             <span className="text-[14px]"> 
             {freeGuru > 0 ? (
-   <span className="tapguru2">{freeGuru}/3 boosts left</span>
+   <span className="tapguru2">{freeGuru}/3 буста</span>
                       ) : (
                         <span className="tapguru2">      
                       {timeRemaining.hours}h {timeRemaining.minutes}m {timeRemaining.seconds}s
@@ -594,7 +594,7 @@ const Boost = () => {
 </div>
 
      <h4 className="text-[16px] xxTitle text-[#f2f2f2] font-semibold uppercase">
-       Balance boost card
+       Карта для увеличения баланса
      </h4>
      <span className="text-[26px] xxAmount text-primary font-semibold flex items-center space-x-2">
        <span>{formatNumber(balance + refBonus)}</span>
@@ -605,7 +605,7 @@ const Boost = () => {
      </span>
 
      <button className="text-btn4 py-1 px-3 bg-[#ffffff14] rounded-[5px] font-medium text-[13px] w-fit">
-       Coming soon...
+       Скоро...
      </button>
 
    </div>
@@ -619,9 +619,9 @@ const Boost = () => {
             <div className="flex space-x-2 w-full">
             <FaRobot size={45} className="text-btn4 boostImg"/>
             <div className="font-medium boostTitle text-[15px] flex-1 items-start text-left flex flex-col space-y-[2px]">
-             <span> Tapping Bot</span>
+             <span> АвтоТап</span>
              <p className="text-[11px] text-[#d0d0d0] text-left">
-              Auto tap every 3 hours
+              Автотап каждые 3 часа
              </p>
              <span className="text-btn4 boostAmount font-medium flex items-center justify-between w-full">
             <span className="text-[14px]"> 2 000 000</span>
@@ -668,18 +668,18 @@ const Boost = () => {
 
                   </div>
                   <h3 className="font-medium text-[22px] pt-2 !mt-[2px]">
-              Tapping Guru
+              Мощный тап
             </h3>
             </div>
             <span className="flex items-center space-x-1 !mt-[4px]">
                   <span className="flex items-center"> <img alt="daxy" src='https://ucarecdn.com/8b43a50a-7638-4cde-9a70-b2a1d612c98b/engagesmall.webp' className='w-[18px]' /></span>
-                 <span className='font-semibold text-[17px]'>Free</span>
+                 <span className='font-semibold text-[17px]'>Бесплатно</span>
                  </span> 
 
             {energy === 0 ? (
               <>
                           <p className="pb-6 text-[#bfbfbf] text-[15px] w-full text-center">
-            You can't use the tapping guru until cooldown time is over.
+            Вы не можете использовать Мощный Тап, пока не закончится время.
             </p>
             <div className="w-full flex justify-center">
             <button
@@ -687,14 +687,14 @@ const Boost = () => {
               disabled={energy === 0}
               className="bg-btn2 text-[#888] w-full py-[10px] px-6 flex items-center justify-center text-center rounded-[12px] font-medium text-[16px]"
             >
-            Get it!
+            Получи!
             </button>
           </div>
               </>
             ) : (
               <>
                                         <p className="pb-6 text-[#bfbfbf] text-[15px] w-full text-center">
-            Multiply your tap income by x5 for 20 seconds. Do not use taps while active.
+            Умножьте свой доход на x5 в течение 20 секунд. Не используйте тапы, пока они активны.
             </p>
             <div className="w-full flex justify-center">
             <button
@@ -702,7 +702,7 @@ const Boost = () => {
               disabled={isDisabled}
               className="bg-btn4 w-full py-[10px] px-6 flex items-center justify-center text-center rounded-[12px] font-medium text-[16px]"
             >
-            Get it!
+            Получи!
             </button>
           </div>
               </>
@@ -736,15 +736,15 @@ const Boost = () => {
 
                   </div>
                   <h3 className="font-medium text-[22px] pt-2 !mt-[2px]">
-              Auto Tap Bot
+              АвтоТап
             </h3>
             <span className="flex items-center space-x-1 !mt-[4px]">
                   <span className="flex items-center"> <img alt="daxy" src='https://ucarecdn.com/8b43a50a-7638-4cde-9a70-b2a1d612c98b/engagesmall.webp' className='w-[18px]' /></span>
                  <span className='font-semibold text-[17px]'>2 000 000</span>
                  </span> 
             <p className="pb-6 text-[#bfbfbf] text-[15px] w-full text-center">
-            Tap Bot will tap when your energy is full <br/>
-            Max bot work duration is 3 hours
+            АвтоТап авто копит, когда ваша энергия будет полна <br/>
+            Максимальная продолжительность работы АвтоТапа составляет 3 часа
                         </p>
           </div>
 
@@ -753,7 +753,7 @@ const Boost = () => {
               onClick={() => setOpenInfoTwo(false)}
               className="bg-btn2 text-[#959595] w-fit py-[10px] px-6 flex items-center justify-center text-center rounded-[12px] font-medium text-[16px]"
             >
-              Insufficient balance
+              Недостаточный баланс
             </button>
           </div>
         </div>
@@ -786,7 +786,7 @@ const Boost = () => {
 
                   </div>
                   <h3 className="font-medium text-[22px] pt-2 !mt-[2px]">
-              Multitap level <span className='text-accent'>{tapValues[tapValue.level]?.value}</span>
+              Уровень Multitap <span className='text-accent'>{tapValues[tapValue.level]?.value}</span>
             </h3>
             <span className="flex items-center space-x-1 !mt-[4px]">
                   <span className="flex items-center"> <img alt="daxy" src='https://ucarecdn.com/8b43a50a-7638-4cde-9a70-b2a1d612c98b/engagesmall.webp' className='w-[18px]' /></span>
@@ -868,13 +868,13 @@ const Boost = () => {
           <div className="w-full flex justify-center flex-col items-center space-y-3">
             <div className="w-full items-center justify-center flex flex-col space-y-2">
               <PiRocketLaunchFill size={32} className='text-accent'/>
-              <p className='font-medium'>x2 balance</p>
+              <p className='font-medium'>x2 баланс</p>
             </div>
             <h3 className="font-medium text-[20px] text-[#ffffff] pt-2 pb-2 uppercase">
-            Balance boost card
+            Карта для увеличения баланса
             </h3>
             <p className="pb-6 text-[#bfbfbf] text-[15px] w-full text-center">
-            This booster card allows you to get double of your earnings before listing date. Ancipate and keep claiming your tokens as you await airdrop date.
+            Эта бустерная карта позволяет вам получить в два раза больше вашего заработка до даты листинга. Ожидайте и продолжайте требовать свои токены в ожидании даты airdrop.
             </p>
           </div>
 
@@ -883,7 +883,7 @@ const Boost = () => {
               onClick={() => setOpenInfo(false)}
               className="bg-btn4 w-fit py-[10px] px-6 flex items-center justify-center text-center rounded-[12px] font-medium text-[16px]"
             >
-             Back to boosters
+             Назад к бустерам
             </button>
           </div>
         </div>
