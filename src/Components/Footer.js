@@ -16,28 +16,28 @@ const Footer = () => {
 
 const footerLinks = [
   {
-    title: "Earn",
+    title: "Тап",
     link: "/",
     icon: selectedExchange.id === 'selectex' ? (<><PiHandTapFill size={20} className={location.pathname === "/" ? "w-[26px] h-[26px]" : "w-[22px] h-[22px]"} /></>) : (<><img id={selectedExchange.id} src={selectedExchange.icon} alt="selected" className="w-[26px]"/></>)
   },
   {
-    title: "LuckyWin",
+    title: "Слоты",
     link: "/roulette",
     icon: <PiSpinnerBallDuotone size={22} className={location.pathname === "/mongo" ? "w-[26px] h-[26px]" : ""}/>
   },
   {
-      title: "Mine",
+      title: "Майтинг",
       link: "/mine",
       icon: <img src='/mine.webp' alt='mine'className={location.pathname === "/mine" ? "w-[22px] brightness-[100]" : "w-[22px] brightness-[1.8]"}/>
     },
 
 {
-  title: "Activities",
+  title: "Задания",
   link: "/tasks",
   icon: <PiNotebookFill size={20} className={location.pathname === "/tasks" ? "w-[26px] h-[26px]" : ""} />
 },
   {
-      title: "Wallet",
+      title: "Кошелек",
       link: "/wallet",
       icon: <img src='/airdrop.webp' alt="wallet" className={location.pathname === "/wallet" ? "w-[22px] h-[22px]" : "w-[18px] h-[18px] grayscale"}/>
   },
