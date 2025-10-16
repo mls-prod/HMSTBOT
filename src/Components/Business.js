@@ -52,7 +52,7 @@ const Business = () => {
         if (index === 4 && userLevelsMarket[3] < 3) {
           setUpgradeStatus(
             <div className='w-full bg-modal rounded-[20px] py-[6px] flex items-center text-[#ffe253] px-4'>
-              <span>Upgrade to level 3 of finance management required</span>
+              <span>Требуется обновление до 3-го уровня управления финансами</span>
             </div>
           );
           setTimeout(() => {
@@ -64,7 +64,7 @@ const Business = () => {
         if (index === 5 && userLevelsMarket[4] < 1) {
           setUpgradeStatus(
             <div className='w-full bg-modal rounded-[20px] py-[6px] flex items-center text-[#ffe253] px-4'>
-              <span>Upgrade to level 1 of risk management required</span>
+              <span>Требуется обновление до 1-го уровня управления рисками</span>
             </div>
           );
           setTimeout(() => {
@@ -78,7 +78,7 @@ const Business = () => {
           setUpgrading(true);
           setUpgradeStatus(
             <div className='w-full bg-modal rounded-[20px] py-[6px] flex items-center text-[#ffe253] px-4'>
-              <span>Insufficient balance</span>
+              <span>Недостаточный баланс</span>
             </div>
           );
           setTimeout(() => {
@@ -92,7 +92,7 @@ const Business = () => {
         setUpgradeStatus(
           <div className='w-full bg-modal rounded-[20px] py-[6px] flex items-center text-secondary px-6 space-x-2'>
             <AiOutlineLoading3Quarters size={14} className='animate-spin'/>
-            <span>Processing... please wait!</span>
+            <span>Обработка... пожалуйста, подождите!</span>
           </div>
         );
       
@@ -260,7 +260,7 @@ const Business = () => {
                         </span>
                       ) : (
                         <>
-                          <span className='text-secondary'>Max profit</span>
+                          <span className='text-secondary'>Макс. прибыль</span>
                         </>
                       )}
                     </div>
@@ -309,7 +309,7 @@ const Business = () => {
 
             <div className="flex flex-col">
               <span className='text-[13px]'>
-                  Profit per hour
+                  Прибыль в час
               </span>
             <div className="flex flex-1 items-center justify-center space-x-1">
 
@@ -347,13 +347,13 @@ const Business = () => {
             >
  {((selectedUpgrade.index === 4 && userLevelsMarket[3] < 3) || (selectedUpgrade.index=== 5 && userLevelsMarket[4] < 1)) ? (
                       <>
-               Unlock required level first
+               Сначала разблокируйте необходимый уровень
                  
                       </>
                     ) : (
                       <>
                   
-                  Go ahead
+                  Продолжай
                       </>
                     )}
             </button>
@@ -364,13 +364,13 @@ const Business = () => {
            >
                     {((selectedUpgrade.index === 4 && userLevelsMarket[3] < 3) || (selectedUpgrade.index=== 5 && userLevelsMarket[4] < 1))  ? (
                       <>
-                Unlock required level first
+                Сначала разблокируйте необходимый уровень
                
                       </>
                     ) : (
                       <>
                   
-                  Insufficient balance
+                  Недостаточный баланс
                       </>
                     )}
            </button>
@@ -408,13 +408,13 @@ const Business = () => {
           <div className="w-full flex justify-center flex-col items-center space-y-3">
             <div className="w-full items-center justify-center flex flex-col space-y-2">
               <IoCheckmarkCircleSharp size={32} className='text-accent'/>
-              <p className='font-medium'>Let's go!!</p>
+              <p className='font-medium'>Поехали!!</p>
             </div>
             <h3 className="font-medium text-center w-full text-[18px] text-[#ffffff] pt-2 pb-2">
-              <span className='text-accent'>PPH UPGRADE SUCCESSFUL!</span> 
+              <span className='text-accent'>ОБНОВЛЕНИЕ PPH УСПЕШНО!</span> 
             </h3>
             <p className="pb-6 text-[#bfbfbf] text-[15px] w-full text-center">
-              Keep grinding! something huge is coming! Get more PPH now! 
+              Продолжай тапать! Приближается что-то огромное! Получите больше PPH сейчас!
             </p>
 
             <div className="w-full flex justify-center">
@@ -422,7 +422,7 @@ const Business = () => {
               onClick={() => setOpenClaim(false)}
               className="bg-btn4 text-[#000] w-full py-[12px] px-6 flex items-center justify-center text-center rounded-[12px] font-medium text-[16px]"
             >
-              Continue
+              Продолжить
             </button>
           </div>
           </div>
