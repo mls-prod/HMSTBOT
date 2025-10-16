@@ -68,10 +68,10 @@ const LoginComp = () => {
             <div className="w-full text-center pb-4 flex flex-col items-center justify-center">
               <img src='maxitap.webp' alt="ddfd" className="w-[100px]"/>
               <h1 className="text-[24px] sm:text-[28px] font-medium pb-1">
-               Maxitapbot <br/>Admin Dashboard
+               MLS <br/>Администрационная панель
               </h1>
               <p className="text-[#b0b0b0] text-[14px] sm:text-[13px] font-light">
-                Enter your email and password to login
+                Укажите email и пароль для входа если вы администратор
               </p>
             </div>
             <div className="w-full flex flex-col items-center space-y-3 sm:space-y-4">
@@ -79,12 +79,12 @@ const LoginComp = () => {
                 label="Email"
                 type="email"
                 id="email"
-                placeholder="Your email"
+                placeholder="Ваш email"
                 value={email}
                 setValue={setEmail}
               />
               <FormControls
-                label="Password"
+                label="Пароль"
                 type="password"
                 id="password"
                 placeholder="**********"
@@ -101,14 +101,14 @@ const LoginComp = () => {
                   >
                     {loading ? (
                       <>
-                        Logging in
+                        Вход в систему
                         <AiOutlineLoading3Quarters
                           size={18}
                           className="animate-spin ml-[12px]"
                         />
                       </>
                     ) : (
-                      "Login"
+                      "Вход"
                     )}
                   </button>
                 </div>
