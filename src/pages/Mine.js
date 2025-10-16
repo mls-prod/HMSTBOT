@@ -187,18 +187,18 @@ const Mine = () => {
 
           <div className={`${activeIndexMenu === 0 ? 'flex' : 'hidden'} py-[14px] w-full flex-wrap space-y-3 rounded-tl-[40px] rounded-tr-[40px] justify-between`}>
 
-<Навыки/>
+<Skills/>
           </div>
 
           <div className={`${activeIndexMenu === 1 ? 'flex' : 'hidden'} py-[14px] w-full flex-wrap space-y-3 rounded-tl-[40px] rounded-tr-[40px] justify-between`}>
 
-<Бизнес/>
+<Business/>
           </div>
 
 
           <div className={`${activeIndexMenu === 2 ? 'flex' : 'hidden'} py-[14px] w-full flex-wrap space-y-3 rounded-tl-[40px] rounded-tr-[40px] justify-between`}>
 
-<Специальные/>
+<Specials/>
           </div>
 
 
