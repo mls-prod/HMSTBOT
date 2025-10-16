@@ -127,7 +127,7 @@ const SlotMachine = () => {
 
     setSpeeds(newSpeeds);
     setR(newR);
-    setMsg("Spinning...");
+    setMsg("Прокрутка...");
     setStart(performance.now());
     setSpinLimit(newSpinLimit); // Decrement the spin limit
   };
@@ -166,12 +166,12 @@ const SlotMachine = () => {
       setMsg(
         <>
        <span className="text-primary">
-        Congratulations! You won <span className="font-semibold text-accent text-nowrap">{formatNumber(award)}</span> points, Click on Claim now!
+        Поздравляю! Ты выиграл <span className="font-semibold text-accent text-nowrap">{formatNumber(award)}</span> MLS, нажмите «Забрать сейчас»!
         </span> 
         </>
       );
     } else {
-      setMsg("No luck, try again!");
+      setMsg("Не повезло, попробуйте еще раз!");
     }
   };
 
@@ -246,7 +246,7 @@ const SlotMachine = () => {
             <img src='/loader.webp' className='w-[16px] rounded-full' alt='engagecoin'/>
           </span>
           <span className='text-[#fff] font-semibold text-[16px]'>
-            <span className='pl-[4px]'>{formatNumber(points)} <span className='text-secondary'>MAX</span></span>
+            <span className='pl-[4px]'>{formatNumber(points)} <span className='text-secondary'>MLS</span></span>
           </span>
         </div>
 
@@ -256,7 +256,7 @@ const SlotMachine = () => {
           {spinLimit <= 0 ? (
               <span className=''>{timeRemaining.hours}h : {timeRemaining.minutes}m : {timeRemaining.seconds}s</span>
             ) : (
-            <span className=''>{spinLimit} spins left</span>
+            <span className=''>{spinLimit} прокруток</span>
             )}
         </div>
 
@@ -292,7 +292,7 @@ const SlotMachine = () => {
             onClick={handleClaim}
               disabled={points <= 0}
               className={`${points <= 0 ? 'bg-btn2 text-[#888]' : 'bg-btn4 text-[#000]'} py-[16px] w-full cursor-pointer px-8 rounded-[16px] font-bold text-[16px]`}>
-              Claim
+              Забрать
             </button>
 
           </div>
@@ -309,14 +309,14 @@ const SlotMachine = () => {
 <button
 onClick={() => setOpenModal(true)}
 className={`bg-btn4 text-[#000] h-[90px] ease-in duration-300 w-[90px] font-bold text-[20px] rounded-full flex items-center justify-center`}>
-SPIN
+КРУТИТЬ
 </button>  
             ) : (
                 <button
                 disabled={start !== undefined || spinLimit <= 0} // Disable the spin button if spins are exhausted
                 onClick={handleStart}
                 className={`${start !== undefined ? 'bg-[#78760e] animate-spin' : 'bg-btn4 text-[#000]'} h-[90px] ease-in duration-300 w-[90px] font-bold text-[20px] rounded-full flex items-center justify-center`}>
-                SPIN
+                КРУТИТЬ
               </button>
             )}
 
