@@ -49,7 +49,7 @@ const openExchange = () => {
             <div className="flex items-center space-x-4">
               <div className='w-full'>
                 <h1 className='font-semibold text-[24px] text-center pb-4'>
-                  Settings
+                  Настройки
                 </h1>
 
                 <div className="w-full flex flex-col pb-[100px]">
@@ -70,14 +70,14 @@ const openExchange = () => {
 
                    
                       <h2 className='flex flex-1 font-medium text-[13px]'>
-                      Choose exchange
+                      Выберите обмен
                       </h2>
                       <div className='text-[12px] font-normal'>
 
                   
                       {selectedExchange.id === 'selectex' ? (
                         <>
-                        None
+                        Не выбрано
                         </>
                       ) : (
                         <>
