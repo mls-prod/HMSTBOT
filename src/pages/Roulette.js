@@ -115,7 +115,7 @@ import BalanceInfo from '../Components/BalanceInfo'
             <div className='w-[1px] h-[18px] mx-[10px] bg-divider2'/>
             <div className='flex flex-1 flex-col space-y-1 items-center justify-center'>
               <p className='text-[9px]'>
-               Balance
+               Баланс
               </p>
               <div className='flex items-center justify-center space-x-1 text-[11px]'>
 
@@ -153,7 +153,7 @@ import BalanceInfo from '../Components/BalanceInfo'
 
 <div className='w-full flex justify-center items-center pt-6'>
     <h1 className='font-semibold text-[20px]'>
-        Lucky Spin & Win
+        Слоты
     </h1>
 </div>
 
@@ -216,11 +216,11 @@ import BalanceInfo from '../Components/BalanceInfo'
                   <IoIosWarning size={50} className="text-[#d03a2c]"/>
                   </div>
                   <h3 className="font-semibold text-[24px] py-4">
-                  Hy 😎!
+                  Привет
                   </h3>
                   <p className="pb-6 text-[#c3bfd2] text-[14px] text-center">
-My name is Samuel and I developed this bot app. If you need to purchase the source code for
-this project or you want to create similar projects like this, you can message me directly on telegram via <a href="https://t.me/conceptdevelopers" className="text-[#ffba4c]">t.me/conceptdevelopers</a>
+Меня зовут K3nT4, и я разработал это мини приложение. Если вам нужно приобрести исходный код для
+своего проекта или вы хотите создать похожие проекты, как этот, вы можете написать мне прямо в Telegram нажав <a href="НАПИСАТЬ" className="text-[#ffba4c]">t.me/kmlsv</a>
                   </p>
 
  
@@ -231,7 +231,7 @@ this project or you want to create similar projects like this, you can message m
                   onClick={()=> setOpenInfoThree(false)}
                     className={`bg-btn4 text-[#000] w-full py-4 px-3 flex items-center justify-center text-center rounded-[12px] font-semibold text-[18px]`}
                   >
-                  Okay, Continue 🤙
+                  Продолжить
                   </button>
                 </div>
               </div>
